@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión | CodoMovies</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/signin.css">
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="/">
+                <span class="logo-texto">
+                    CodoMovies
+                </span>
+            </a>
+        </div>
+    </nav>
+    <main>
+        <section class="form-wrapper">
+            <h2>¡Iniciemos Sesión!</h2>
+            <form action="#" id="formSign" method="GET" novalidate>
+                <div class="error" id="error-lastname"></div>
+                <div class="form-control">
+                    <input type="email" required name="email" id="email">
+                    <label>Email</label>
+                </div>
+                <div class="error" id="error-email"></div>
+                <div class="form-control">
+                    <input type="password" required name="password" id="password">
+                    <label>Contraseña</label>
+                </div>
+                <div class="error" id="error-password"></div>
+                <button type="submit">Iniciar Sesión</button>
+                <div class="form-help"> 
+                    <a href="#">¿Perdiste tu cuenta?</a>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="./js/validation-signin.js"></script>
+</body>
